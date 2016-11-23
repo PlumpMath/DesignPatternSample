@@ -30,6 +30,11 @@ namespace Prototype
             p2.Use(hello);
             p3.Use(hello);
             p4.Use(hello);
+
+            if (p3 != p4)
+            {
+                Console.WriteLine("クローンしたので、オブジェクト自体は別物");
+            }
         }
     }
 }
